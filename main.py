@@ -63,7 +63,7 @@ def exercise_03():
     num_01, num_02, num_03 = in_put()
 
     def entry(num_1, num_2, num_3):
-        print(round((((num_1 ** 5 + 7) / abs(-6) * num_2) ** (1 / 3)) / (7 - num_3 % num_2), 3))
+        print(round((((num_1 ** 5 + 7) / (abs(-6) * num_2) ** (1 / 3)) / (7 - num_3 % num_2), 3))
 
     def main_03(num_1, num_2, num_3):
         entry(num_1, num_2, num_3)
