@@ -174,7 +174,6 @@ def main():
     exercise_8()
     exercise_9()
     exercise_10()
-    pass
 
 
 main()
