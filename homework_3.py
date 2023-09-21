@@ -1,12 +1,13 @@
 from datetime import datetime
-from math import gcd, lcm
+from math import gcd
 import datetime
 
 
 def exercise_1():
     numbers = [int(input("Введи число в список:")) for i in range(int(input("Введите длину списка:")))]
     print("НОД чисел: {}, НОК чисел: {} ---> Cписка: {}".format(gcd(*numbers), lcm(*numbers), numbers))
-
+#todo я так поняла, суть задания в том, что нужно не встроенные фукции использовать, а написать
+# алгоритмы поиска нок и нод самостоятельно
 
 def exercise_2():
     text = []
@@ -51,7 +52,7 @@ def exercise_5():  # Шифр Цезаря
                     count = ord(a)
                     for b in range(step):
                         if count == 1071 or count == 1103:
-                            count -= 31
+                            count -= 31 #todo лучше использовать остаток от деления
                         else:
                             count += 1
                 char += chr(count)
@@ -106,7 +107,7 @@ def exercise_7():
     def is_palindrome(a: str):
         flag = False
         for i in range(0, (len(a) // 2)):
-            if a[i] == a[len(a) - i - 1]:
+            if a[i] == a[len(a) - i - 1]: #todo можно использовать отрицательную индексация
                 flag = True
             else:
                 return False
