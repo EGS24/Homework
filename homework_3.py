@@ -111,7 +111,15 @@ def exercise_7():
             else:
                 return False
         return flag
-
+# --------------------------------------------------    
+# def is_palindrome(a: str):
+#     flag = False
+#     for i in range(1, (len(a) // 2) + 1):
+#         if a[i - 1] == a[-i]:
+#             flag = True
+#         else:
+#             return False
+#     return flag
     if is_palindrome(text := str(input("Введите строку:"))):
         print('Строка "{}" является палиндромом.'.format(text))
     else:
