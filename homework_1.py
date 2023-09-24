@@ -9,7 +9,7 @@ def exercise_01():
         return number
 
     def amount(number):
-        return (number * (number + 1)) / 2
+        return (number * (number + 1)) / 2  # скобки делимого не нужны
 
     num = in_put()
 
@@ -63,7 +63,7 @@ def exercise_03():
     num_01, num_02, num_03 = in_put()
 
     def entry(num_1, num_2, num_3):
-        print(round((((num_1 ** 5 + 7) / (abs(-6) * num_2) ** (1 / 3)) / (7 - num_3 % num_2), 3))
+        print(round(((num_1 ** 5 + 7) / (abs(-6) * num_2) ** (1 / 3)) / (7 - num_3 % num_2), 3))  # лишняя скобка
 
     def main_03(num_1, num_2, num_3):
         entry(num_1, num_2, num_3)
@@ -101,7 +101,7 @@ def exercise_05():
     num_01, num_02, lower_limit, upper_limit = in_put()
 
     def entry(num_1, num_2):
-        return (-num_2) / num_1
+        return (-num_2) / num_1  # отдальная функция - избыточно, скобки вроде как не нужны
 
     def main_05(num_1, num_2, low_lim, up_lim):
         print(low_lim <= entry(num_1, num_2) <= up_lim)
